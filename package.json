@@ -7,10 +7,15 @@
     "waterline": "node ./src/waterline",
     "typeorm": "node ./src/typeorm",
     "caminte": "node ./src/caminte",
+
     "sequelize": "node ./src/sequelize",
     "sequelize-migration": "./node_modules/.bin/sequelize db:migrate up --config ./src/sequelize/config/migration.json --migrations-path ./src/sequelize/migrations",
+
     "knex": "node ./src/knex",
-    "knex-migration": "./node_modules/knex/bin/cli.js migrate:latest --migrations-directory ./src/knex/migrations --knexfile ./src/knex/config.js"
+    "knex-migration": "./node_modules/knex/bin/cli.js migrate:latest --migrations-directory ./src/knex/migrations --knexfile ./src/knex/config.js",
+
+    "objection": "node ./src/objection",
+    "objection-migration": "./node_modules/knex/bin/cli.js migrate:latest --migrations-directory ./src/objection/migrations --knexfile ./src/objection/config.js"
   },
   "license": "MIT",
   "devDependencies": {
@@ -20,6 +25,7 @@
     "mongodb": "^3.1.13",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.5",
+    "objection": "^1.6.2",
     "sails-mongo": "^1.0.1",
     "sequelize": "^4.42.0",
     "sequelize-cli": "^5.4.0",
