@@ -6,14 +6,19 @@
   "scripts": {
     "waterline": "node ./src/waterline",
     "typeorm": "node ./src/typeorm",
-    "caminte": "node ./src/caminte"
+    "caminte": "node ./src/caminte",
+    "sequelize": "node ./src/sequelize",
+    "sequelize-migration": "./node_modules/.bin/sequelize db:migrate up --config ./src/sequelize/config/migration.json --migrations-path ./src/sequelize/migrations"
   },
   "license": "MIT",
   "devDependencies": {
     "async": "^2.6.2",
     "caminte": "^0.4.1",
     "mongodb": "^3.1.13",
+    "mysql2": "^1.6.5",
     "sails-mongo": "^1.0.1",
+    "sequelize": "^4.42.0",
+    "sequelize-cli": "^5.4.0",
     "typeorm": "^0.2.14",
     "waterline": "^0.13.6"
   }
