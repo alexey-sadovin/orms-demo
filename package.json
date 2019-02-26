@@ -1,0 +1,14 @@
+{
+  "name": "orms-demo",
+  "version": "0.0.0",
+  "description": "Testing ORMs: Waterline, Loopback, TypeORM, Caminte, Sequelize, Knex, Objection.js",
+  "main": "index.js",
+  "scripts": {
+    "waterline": "node ./src/waterline"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "sails-mongo": "^1.0.1",
+    "waterline": "^0.13.6"
+  }
+}
