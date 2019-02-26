@@ -8,13 +8,17 @@
     "typeorm": "node ./src/typeorm",
     "caminte": "node ./src/caminte",
     "sequelize": "node ./src/sequelize",
-    "sequelize-migration": "./node_modules/.bin/sequelize db:migrate up --config ./src/sequelize/config/migration.json --migrations-path ./src/sequelize/migrations"
+    "sequelize-migration": "./node_modules/.bin/sequelize db:migrate up --config ./src/sequelize/config/migration.json --migrations-path ./src/sequelize/migrations",
+    "knex": "node ./src/knex",
+    "knex-migration": "./node_modules/knex/bin/cli.js migrate:latest --migrations-directory ./src/knex/migrations --knexfile ./src/knex/config.js"
   },
   "license": "MIT",
   "devDependencies": {
     "async": "^2.6.2",
     "caminte": "^0.4.1",
+    "knex": "^0.16.3",
     "mongodb": "^3.1.13",
+    "mysql": "^2.16.0",
     "mysql2": "^1.6.5",
     "sails-mongo": "^1.0.1",
     "sequelize": "^4.42.0",
