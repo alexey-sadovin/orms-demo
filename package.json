@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "waterline": "node ./src/waterline",
-    "typeorm": "node ./src/typeorm"
+    "typeorm": "node ./src/typeorm",
+    "caminte": "node ./src/caminte"
   },
   "license": "MIT",
   "devDependencies": {
+    "async": "^2.6.2",
+    "caminte": "^0.4.1",
     "mongodb": "^3.1.13",
     "sails-mongo": "^1.0.1",
     "typeorm": "^0.2.14",
