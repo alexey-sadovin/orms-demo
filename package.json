@@ -4,11 +4,14 @@
   "description": "Testing ORMs: Waterline, Loopback, TypeORM, Caminte, Sequelize, Knex, Objection.js",
   "main": "index.js",
   "scripts": {
-    "waterline": "node ./src/waterline"
+    "waterline": "node ./src/waterline",
+    "typeorm": "node ./src/typeorm"
   },
   "license": "MIT",
   "devDependencies": {
+    "mongodb": "^3.1.13",
     "sails-mongo": "^1.0.1",
+    "typeorm": "^0.2.14",
     "waterline": "^0.13.6"
   }
 }
