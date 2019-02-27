@@ -16,6 +16,9 @@ const config = require('./config');
 })();
 
 async function run(orm) {
+  // criteria modifiers: https://sailsjs.com/documentation/concepts/models-and-orm/query-language#?criteria-modifiers
+  // model methods: https://github.com/balderdashy/waterline/blob/master/lib/waterline/MetaModel.js#L140
+
   const User = await orm.getModel('user');
   const Pet = await orm.getModel('pet');
 

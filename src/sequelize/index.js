@@ -16,6 +16,9 @@ const {db, user, password, opts} = require('./config');
 })();
 
 async function run(orm) {
+  // model api: https://sequelize.readthedocs.io/en/v3/api/model/
+  // query operators: https://sequelize.readthedocs.io/en/v3/docs/querying/#operators
+
   await orm.init();
 
   const User = orm.getUserModel();

@@ -13,6 +13,9 @@ run(err => {
 });
 
 function run(cb) {
+  // query interface: https://github.com/biggora/caminte/wiki/Query-Interface#queries
+  // model api methods: https://github.com/biggora/caminte/wiki/Common-API-methods
+
   const pets = [];
 
   async.waterfall([

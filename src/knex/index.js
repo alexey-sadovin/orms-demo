@@ -5,10 +5,7 @@ const USER_TABLE = 'users';
 const PET_TABLE = 'pets';
 
 (async () => {
-  const orm = knex({
-    client: config.client,
-    connection: config.connection
-  });
+  const orm = knex(config);
 
   try {
     await run(orm);
@@ -22,6 +19,8 @@ const PET_TABLE = 'pets';
 })();
 
 async function run(orm) {
+  // api: https://knexjs.org/#Builder-wheres
+
   await orm(USER_TABLE).del();
   await orm(PET_TABLE).del();
 

@@ -18,6 +18,8 @@ const config = require('./config');
 })();
 
 async function run(orm) {
+  // repository api: https://github.com/typeorm/typeorm/blob/master/docs/repository-api.md
+
   const userRepository = await orm.getRepository(User);
   const petRepository = await orm.getRepository(Pet);
 
